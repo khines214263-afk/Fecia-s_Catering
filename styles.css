@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: pink;
+    padding: 20px;
+    border-radius: 8px;
+    }
+.reviews {
+        max-width: 700px;
+        margin: 0 auto 40px auto;
+        padding: 20px;
+     }
+     .reviews p {
+        font-style: italic;
+        margin: 30px;
+     }
+     .reviews span {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+        
+     }
+     .review {
+        margin-bottom: 40px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        border-color: #f9f9f9;
+        text-align: center;
+     }
+     .testimony {
+        margin-bottom: 60px;
+        font-weight: bold;
+        font-size: 50px;
+     }
+.menu {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+    }
+section {
+    margin-bottom: 40px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    margin: auto;
+}
+body {
+    font-family: Georgia, sans-seriff;
+    background-color: brown;
+    line-height: 1.6;
+    padding: 20px;
+}
+p {
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color: beige;
+}
+li {
+    text-align: center;
+}
+.notified {
+    text-align: left;
+}
+.suggest {
+    font-size: 24px;
+    color: aliceblue;
+    text-align: center;
+    
+}
+.cooking {
+    text-align: center;
+}
+ .requested {
+    font-weight: bold;
+    text-decoration: underline;
+ } 
+
+.entrees, .side_items, .testimonial {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.gallery {
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.contact {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.brisket:hover {
+    cursor: pointer;
+    background-size: 275px;
+}
+.owner:hover {
+    cursor: pointer;
+    background-size: 275px;
+}
+.home-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+home-btn:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+.about {
+    text-wrap: wrap;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    content: "";
+}
+
+
+.email.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.subscribe form {
+    display: flex;
+    gap: 10px
+}
+.suscribe {
+    max-width: 600px;
+    margin: 60px auto;
+    text-align: right;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+.subscribe input {
+    padding: 10px;
+    width: 65%;
+    max-width: 300px;
+    margin-right: 10px;
+}
+.subscribe button {
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.subscribe p {
+    margin-bottom: 15px;
+}
+.subcribe button:hover {
+    background-color: #333;
+}
+@media (max-width: 768) {
+    .container {
+        flex-direction: column;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    .testimonial {
+        grid-template-columns: 1fr;
+    }
+    .top-layout {
+        grid-template-columns: 1fr;
+    }
+    .left, .right {
+        text-align: left;
+        transform: none;
+        margin-bottom: 20px;
+    } 
+    
+}
+@media (max-width: 600px) {
+    .subscribe input {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    .subscribe button {
+        width: 750%;
+    }
+}
